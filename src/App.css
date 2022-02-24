@@ -1,0 +1,48 @@
+.todoApp {
+  text-align: center;
+}
+.todoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todoGrid{
+  width: auto;
+  min-width: 500px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Add Todo */
+.addTodoInput{
+  width: calc(100% - 80px);
+  padding: 10px;
+}
+.addTodoSubmit{
+  width: 80px;
+}
+.error {
+  display: none;
+}
+.error.active {
+  display: block;
+  color: red;
+  font-size: 18px;
+  padding: 15px 10px;
+  text-align: left;
+}
+
+/* Todo */
+.todoGrid .todoPaper{
+  width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  margin-top: 15px;
+}
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s 0.5s, opacity 0.5s;
+}
